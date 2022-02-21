@@ -1,0 +1,76 @@
+body{
+    background-color: aqua;
+}
+.grid-container{
+    max-width: 100%;
+    height: 500px;
+    padding: 20px;
+    margin: 20px;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+    'header header header header aside'
+    'menu main main main aside'
+    'menu main main main aside'
+    'menu main main main aside'
+    'menu footer footer footer footer';
+}
+.grid div{
+    position: absolute;
+    width: 100%;
+    border: 2px double whitesmoke;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.item1{
+    grid-area: header;
+    background-color: lightgreen;
+}
+.item2{
+    grid-area: menu;
+}
+.item3{grid-area: main;}
+.item4{grid-area: aside}
+.item5{grid-area: footer;}
+h1{
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+/*--------------------nav-start-----------------------*/
+.nav-menu-vertical{
+    background-color: #333333;
+}
+.nav-menu-vertical ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-menu-vertical ul li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    display: block;
+    padding: 15px 80px;
+}
+.nav-menu-vertical ul li a:hover{
+    background-color: #F1F1F1;
+    color: black;
+}
+.nav-menu-vertical ul li a.active-vertical1{
+    background-color: #4CAF50;
+    color: white;
+}
+.nav-menu-vertical ul li a.active-vertical2{
+    background-color: lightpink;
+    color: black;
+}
+/*--------------------nav-end-----------------------*/
